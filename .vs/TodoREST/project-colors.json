@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "05a1af58-41e1-4ffd-bb93-e8ba58be5646": {
+      "ProjectGuid": "05a1af58-41e1-4ffd-bb93-e8ba58be5646",
+      "DisplayName": "TodoREST",
+      "ColorIndex": 0
+    },
+    "c05ca11c-c283-4321-9e3c-05d306b59c13": {
+      "ProjectGuid": "c05ca11c-c283-4321-9e3c-05d306b59c13",
+      "DisplayName": "TodoAPI",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}

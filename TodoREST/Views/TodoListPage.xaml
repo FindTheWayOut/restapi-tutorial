@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    x:Class="TodoREST.TodoListPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Todo">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Clicked="OnAddItemClicked" Text="+" />
+    </ContentPage.ToolbarItems>
+    <ListView
+        x:Name="listView"
+        Margin="10"
+        ItemSelected="OnItemSelected">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <StackLayout HorizontalOptions="StartAndExpand" Orientation="Horizontal">
+                        <Label Text="{Binding Name}" VerticalTextAlignment="Center" />
+                        <Label
+                            IsVisible="{Binding Done}"
+                            Text="Сделано"
+                            TextColor="Gray" />
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</ContentPage>
